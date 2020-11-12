@@ -11,6 +11,20 @@ system of that local cloud.
 The example should serve as a good starting point for getting familiar with
 how to use Arrowhead Kalix for integration with Arrowhead local clouds.
 
+## Setup Project under Eclipse
+
+The following instructions explain how to setup the `echo-cloud` example under eclipse. 
+
+1. Clone repo: `$ git clone https://github.com/arrowhead-f/arrowhead-kalix-examples.git`
+2. Open eclipse and select *Import* -> *Maven* -> *Exisiting Maven Projects*
+3. Select as Root Folder "*/path/to/*arrowhead-kalix-examples/echo-cloud" and click *"Finish"*
+4. Run (from terminal or within the IDE using *Run AS*) `mvn clean` and `mvn install` 
+5. Open the Project's *properties* -> *Java Build Path* -> *Source* Tab
+6. Hit *"Add Folder"* and mark **annotations** under *target/generated-sources/*
+7. Hit *"Apply and Close"*
+
+Now, the project should be successfully setup.
+
 ## Running
 
 This folder contains a [`docker-compose.yml`](docker-compose.yml) file that
